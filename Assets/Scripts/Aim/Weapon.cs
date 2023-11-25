@@ -64,8 +64,9 @@ namespace Aim
             do
             {
                 _gun.Fire();
-                await Task.Delay(TimeSpan.FromSeconds(60f / _rateOfFire), token);
+                await Task.Delay(TimeSpan.FromSeconds(_rateOfFire/60f), token);
             } while (!token.IsCancellationRequested);
+            StopFire();
         }
 
         private void StopFire()
@@ -74,6 +75,7 @@ namespace Aim
             _fireToken.Cancel();
             _fireToken.Dispose();
             _fireToken = null;
+            Debug.Log("StopFire");
         }
     }
 }

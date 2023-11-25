@@ -18,8 +18,7 @@ namespace Aim
 
         private void OnCollisionEnter(Collision collision)
         {
-            Debug.Log("Damage");
-            
+            // Debug.Log("Damage");
             
             _rigidbody.AddForce(Vector3.zero);
             _rigidbody.isKinematic = true;
