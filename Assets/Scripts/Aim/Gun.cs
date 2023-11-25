@@ -11,14 +11,7 @@ namespace Aim
         [SerializeField] private Transform _bulletSpawnTransform;
         [SerializeField] private uint _bulletCount;
         [SerializeField] private float _power;
-
-        private Bullet _bullet = null;
         
-        private void Start()
-        {
-            // _bullet = Instantiate(_bulletPrefab, _bulletSpawnTransform);
-        }
-
         public void LookAt(Vector3 position)
         {
             transform.LookAt(position);
@@ -26,8 +19,7 @@ namespace Aim
 
         public void Fire()
         {
-            Instantiate(_bulletPrefab).Throw(transform.forward * _power);
-            // _bullet = Instantiate(_bulletPrefab, _bulletSpawnTransform);
+            Instantiate(_bulletPrefab, _bulletSpawnTransform.position, Quaternion.identity).Throw(transform.forward * _power);
         }
     }
 }

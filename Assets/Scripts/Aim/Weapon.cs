@@ -10,6 +10,7 @@ namespace Aim
 {
     public class Weapon: MonoBehaviour
     {
+        [SerializeField] private Camera _mainCamera;
         [SerializeField] private AimObject _aimObject;
         [SerializeField] private Gun _gun;
         [SerializeField] private InputController _inputController;
@@ -20,7 +21,7 @@ namespace Aim
 
         private void Start()
         {
-            _aimTransform = _aimObject.transform;
+            _aimTransform = _mainCamera.transform;
 
             _inputController
                 .OnMainInputStatus()
@@ -45,7 +46,9 @@ namespace Aim
 
         private void Update()
         {
-            var aimPosition = _aimTransform.position;
+            RaycastHit hit;
+            var isCast = Physics.Raycast(_aimTransform.position, _aimTransform.forward, out hit, 100);
+            var aimPosition = isCast? hit.point: _aimTransform.position + _aimTransform.forward * 100;
             var lookPosition = new Vector3(aimPosition.x, transform.position.y, aimPosition.z);
             transform.LookAt(lookPosition);
             _gun.LookAt(aimPosition);
