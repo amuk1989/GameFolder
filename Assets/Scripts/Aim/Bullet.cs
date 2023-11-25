@@ -16,7 +16,7 @@ namespace Aim
             Destroy(gameObject, _lifeTime);
         }
 
-        private void OnCollisionStay(Collision collision)
+        private void OnCollisionEnter(Collision collision)
         {
             Debug.Log("Damage");
             
