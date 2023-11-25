@@ -12,6 +12,9 @@ public class AimObject : MonoBehaviour
     {
         var mouseDirection = _mainCamera.ScreenPointToRay(Input.mousePosition).direction;
 
-        transform.position = _carTransform.position + mouseDirection * _multiplier;
+        var position = _carTransform.position + mouseDirection * _multiplier;
+        if (position.y < _carTransform.position.y)
+            position = new Vector3(position.x, _carTransform.position.y, position.z);
+        transform.position = position;
     }
 }
