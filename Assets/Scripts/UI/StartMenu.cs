@@ -13,7 +13,7 @@ public class StartMenu : MonoBehaviour
     {
         _startButton
             .OnClickAsObservable()
-            .Subscribe(_ => SceneManager.LoadScene("Game"))
+            .Subscribe(_ => SceneManager.LoadScene("CarTest"))
             .AddTo(this);
     }
 }

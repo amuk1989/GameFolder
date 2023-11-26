@@ -132,11 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5609cb90f94f69a3f9f19aa418316a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   _rigidbody: {fileID: 2083070321632366749}
   _lifeTime: 5
   _explosion: {fileID: 2420500221934599312}
   _fire: {fileID: 5871926288571710356}
-  _damage: 1
 --- !u!54 &2083070321632366749
 Rigidbody:
   m_ObjectHideFlags: 0

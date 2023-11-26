@@ -1,7 +1,8 @@
 ﻿using System;
+using Main;
 using UnityEngine;
 
-public class Tower5GMissile : MonoBehaviour
+public class Tower5GMissile : BaseBullet
 {
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private float _lifeTime;
@@ -10,7 +11,6 @@ public class Tower5GMissile : MonoBehaviour
 
     [SerializeField] private Transform target;
     [SerializeField] public float missileSpeed = 5f;
-    [SerializeField] public int damage = 10;
 
     public void SetTarget()
     {
@@ -31,6 +31,10 @@ public class Tower5GMissile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        gameObject.layer = LayerMask.NameToLayer("PhysicsIgnore");
+        
+        SetDamage(collision);
+        
         _rigidbody.AddForce(Vector3.zero);
         _rigidbody.isKinematic = true;
 
@@ -39,12 +43,5 @@ public class Tower5GMissile : MonoBehaviour
 
         _fire.SetActive(false);
         _explosion.SetActive(true);
-
-        //TowerHealth targetHealth = other.GetComponent<TowerHealth>();
-
-        //if (targetHealth != null)
-        //{
-        //    targetHealth.TakeDamage(damage);
-        //}
     }
 }
