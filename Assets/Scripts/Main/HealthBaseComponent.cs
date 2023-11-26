@@ -9,7 +9,7 @@ namespace Main
         [SerializeField] private bool _isImmortal;
         
         protected readonly ReactiveCommand _onDead = new();
-        public bool IsImmortal { get; protected set; }
+        protected bool IsImmortal { get; set; }
         public IObservable<Unit> OnDead() => _onDead.AsObservable();
 
         public void MakeMortal() => IsImmortal = false;

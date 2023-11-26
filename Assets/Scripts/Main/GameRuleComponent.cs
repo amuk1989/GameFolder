@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Character;
 using UniRx;
 using UnityEngine;
@@ -27,14 +28,22 @@ namespace Main
                     .OnDead()
                     .Subscribe(_ =>
                     {
-                        if (WasAllTowerDestroyed()) _mainPower5G.MakeMortal();
+                        _deadCount++;
+                        if (!WasAllTowerDestroyed()) return;
+                        
+                        Debug.Log("[GameRuleComponent] All destroyed");
+                        _mainPower5G.MakeMortal();
                     })
                     .AddTo(this);
             }
 
             _mainPower5G
                 .OnDead()
-                .Subscribe(_ => SceneManager.LoadScene("StartMenu"))
+                .Subscribe(async _ =>
+                {
+                    await Task.Delay(5000);
+                    SceneManager.LoadScene("StartMenu");
+                })
                 .AddTo(this);
         }
 

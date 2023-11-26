@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Main;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Tower5GHealth : HealthBaseComponent, IVulnerable
@@ -35,11 +34,11 @@ public class Tower5GHealth : HealthBaseComponent, IVulnerable
     private async void DestroyProcess()
     {
         gameObject.layer = LayerMask.NameToLayer("PhysicsIgnore");
-        _onDead.Execute();
         _explosionCOntainer.gameObject.SetActive(true);
         await Task.Delay(TimeSpan.FromSeconds(_explosionTime/2f));
         _view.SetActive(false);
         await Task.Delay(TimeSpan.FromSeconds(_explosionTime/2f));
+        _onDead.Execute();
         Destroy(gameObject);
     }
 }

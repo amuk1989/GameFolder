@@ -1,8 +1,6 @@
 using System;
 using System.Threading.Tasks;
 using Main;
-using UniRx;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace Character
