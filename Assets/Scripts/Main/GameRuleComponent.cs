@@ -12,6 +12,7 @@ namespace Main
         [SerializeField] private CarHealthComponent _carHealth;
         [SerializeField] private Tower5GHealth[] _tower5G;
         [SerializeField] private Tower5GHealth _mainPower5G;
+        [SerializeField] private GameObject _shield;
 
         private int _deadCount;
         
@@ -33,6 +34,7 @@ namespace Main
                         
                         Debug.Log("[GameRuleComponent] All destroyed");
                         _mainPower5G.MakeMortal();
+                        _shield.SetActive(false);
                     })
                     .AddTo(this);
             }
