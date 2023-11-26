@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -578,6 +578,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8a48c91ac9a48e6b0551ab509096b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1043195306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3979539096275209811, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+  m_PrefabInstance: {fileID: 532974361111825179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1043195309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043195306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1129043861 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3102729204865339690, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
@@ -1104,6 +1132,34 @@ Transform:
   - {fileID: 2110893043}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1794353493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2460243217523437251, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+  m_PrefabInstance: {fileID: 532974361111825179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1794353496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794353493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1979820621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,6 +1684,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Towers
       objectReference: {fileID: 0}
+    - target: {fileID: 511290328183252505, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144226591757043013, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323527222503930040, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504230214202531587, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765662243692751847, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776461189548156498, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776461189548211482, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776461189548267324, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179501266401343909, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
     - target: {fileID: 2247461781341628603, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1668,10 +1760,120 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2460243216437839962, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460243216590715167, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460243216852370420, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460243217523437251, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460243217523437261, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460243217806985861, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3057607166686573258, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979539095964363285, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979539096275209811, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979539096275209821, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979539096946336612, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979539097214196111, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979539097329379530, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022221885060239159, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301207418591448618, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399794691065158760, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710243775932160184, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771023626424551465, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854324622584977385, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339838840766533586, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264856244351463223, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408939287345537126, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7474221886499372966, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586579396867313683, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247340325919242333, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 8959439041248227459, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3979539096275209811, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1043195309}
+    - targetCorrespondingSourceObject: {fileID: 2460243217523437251, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1794353496}
   m_SourcePrefab: {fileID: 100100000, guid: 01b9bdd132a766f4d8acda7f5c06d957, type: 3}
 --- !u!1001 &5955737241326009371
 PrefabInstance:
@@ -1681,6 +1883,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3230613127508387127, guid: 63fcaf15c33c67d4881fdbcf5846976b, type: 3}
+      propertyPath: _maxHealthPoint
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 6050778160886164674, guid: 63fcaf15c33c67d4881fdbcf5846976b, type: 3}
       propertyPath: _aimObject
       value: 

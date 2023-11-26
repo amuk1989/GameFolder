@@ -1,5 +1,6 @@
 ﻿using System;
 using Main;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Tower5GMissile : BaseBullet
@@ -11,6 +12,7 @@ public class Tower5GMissile : BaseBullet
 
     [SerializeField] private Transform target;
     [SerializeField] public float missileSpeed = 5f;
+    [SerializeField] public int damage = 50;
 
     public void SetTarget()
     {
@@ -31,6 +33,9 @@ public class Tower5GMissile : BaseBullet
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("TowerColliderToIgnore"))
+            return;
+
         gameObject.layer = LayerMask.NameToLayer("PhysicsIgnore");
         
         SetDamage(collision);
