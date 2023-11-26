@@ -9,11 +9,13 @@ public class StartMenu : MonoBehaviour
 {
     [SerializeField] private Button _startButton;
     
-    void Start()
+    private void Start()
     {
+        Cursor.visible = true;
+        
         _startButton
             .OnClickAsObservable()
-            .Subscribe(_ => SceneManager.LoadScene("Game"))
+            .Subscribe(_ => SceneManager.LoadScene("CarTest"))
             .AddTo(this);
     }
 }

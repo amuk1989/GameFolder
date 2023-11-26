@@ -1,9 +1,10 @@
 ﻿using System;
+using Main;
 using UnityEngine;
 
 namespace Aim
 {
-    public class Bullet : MonoBehaviour
+    public class Bullet : BaseBullet
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private float _lifeTime;
@@ -18,7 +19,9 @@ namespace Aim
 
         private void OnCollisionEnter(Collision collision)
         {
-            // Debug.Log("Damage");
+            gameObject.layer = LayerMask.NameToLayer("PhysicsIgnore");
+            
+            SetDamage(collision);
             
             _rigidbody.AddForce(Vector3.zero);
             _rigidbody.isKinematic = true;
