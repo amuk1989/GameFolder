@@ -1,4 +1,5 @@
 ﻿using System;
+using Main;
 using UnityEngine;
 
 namespace Aim
@@ -9,6 +10,7 @@ namespace Aim
         [SerializeField] private float _lifeTime;
         [SerializeField] private GameObject _explosion;
         [SerializeField] private GameObject _fire;
+        [SerializeField] private int _damage = 1;
         
         public void Throw(Vector3 power)
         {
@@ -18,8 +20,10 @@ namespace Aim
 
         private void OnCollisionEnter(Collision collision)
         {
-            // Debug.Log("Damage");
-            
+            if (collision.gameObject.TryGetComponent<IVulnerable>(out var val))
+            {
+                val.TakeDamage(_damage);
+            };
             _rigidbody.AddForce(Vector3.zero);
             _rigidbody.isKinematic = true;
             

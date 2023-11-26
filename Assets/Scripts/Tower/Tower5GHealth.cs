@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Main;
 using UnityEngine;
 
-public class Tower5GHealth : MonoBehaviour
+public class Tower5GHealth : MonoBehaviour, IVulnerable
 {
     public int maxHealth = 100;
     private int currentHealth;

@@ -136,6 +136,7 @@ MonoBehaviour:
   _lifeTime: 5
   _explosion: {fileID: 2420500221934599312}
   _fire: {fileID: 5871926288571710356}
+  _damage: 1
 --- !u!54 &2083070321632366749
 Rigidbody:
   m_ObjectHideFlags: 0
