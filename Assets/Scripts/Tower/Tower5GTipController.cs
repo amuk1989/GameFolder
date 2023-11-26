@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
-public class TowerTipController : MonoBehaviour
+public class Tower5GTipController : MonoBehaviour
 {
-    [SerializeField] public TowerMissile missilePrefab;
+    [SerializeField] public Tower5GMissile missilePrefab;
     [SerializeField] private Transform _bulletSpawnTransform;
     [SerializeField] public float shootingInterval = 3f;
     [SerializeField] public float missileSpeed = 10f;
@@ -28,9 +28,9 @@ public class TowerTipController : MonoBehaviour
 
     private void Shoot()
     {
-        TowerMissile missile = Instantiate(missilePrefab, _bulletSpawnTransform.position, Quaternion.identity);
+        Tower5GMissile missile = Instantiate(missilePrefab, _bulletSpawnTransform.position, Quaternion.identity);
 
-        TowerMissile missileScript = missile.GetComponent<TowerMissile>();
+        Tower5GMissile missileScript = missile.GetComponent<Tower5GMissile>();
         if (missileScript != null)
         {
             missileScript.SetTarget();

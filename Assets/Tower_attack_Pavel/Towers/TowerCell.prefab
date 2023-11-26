@@ -623,6 +623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8614457773309005762}
   - component: {fileID: 6262300372268788899}
+  - component: {fileID: 5368196695953582786}
   m_Layer: 0
   m_Name: TowerTip
   m_TagString: Untagged
@@ -659,6 +660,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85e6f268c7b5b94e908d02cb9d2d924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5368196695953582786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3755601000330800208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c46375eeae11f4db4ff60584b56f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 5569407395596769894, guid: 5b0e100cd0e8b7144b5b6771d556580f, type: 3}
+  _bulletSpawnTransform: {fileID: 537882020161683529}
+  shootingInterval: 3
+  missileSpeed: 10
+  detectionRange: 50000
+  _power: 2
 --- !u!1 &4320916032054088304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,6 +2051,7 @@ GameObject:
   - component: {fileID: 7588709945934581916}
   - component: {fileID: 6425659292629910231}
   - component: {fileID: 5589997598737950257}
+  - component: {fileID: 5352447529905110027}
   m_Layer: 0
   m_Name: TowerCell
   m_TagString: Untagged
@@ -2169,6 +2189,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.68
   m_Center: {x: 0, y: 2.53, z: 0}
+--- !u!114 &5352447529905110027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9092954648006720529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d78202d86f250478154435e02b8a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &9215389273557623321
 GameObject:
   m_ObjectHideFlags: 0

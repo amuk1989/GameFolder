@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2186287401519109928}
   - component: {fileID: 392632797654057588}
   - component: {fileID: 6603398968324729899}
-  - component: {fileID: 5085510621066700196}
+  - component: {fileID: 1331072241830235127}
   m_Layer: 0
   m_Name: TowerPyramidTip
   m_TagString: Untagged
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85e6f268c7b5b94e908d02cb9d2d924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5085510621066700196
+--- !u!114 &1331072241830235127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -338,7 +338,7 @@ PrefabInstance:
       addedObject: {fileID: 1396443527571636854}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cd50e28e2c2cc174a87fdf56647d916a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5525430981076810170}
+      addedObject: {fileID: 8491694904750760611}
   m_SourcePrefab: {fileID: 100100000, guid: cd50e28e2c2cc174a87fdf56647d916a, type: 3}
 --- !u!4 &1386122323371613424 stripped
 Transform:
@@ -549,7 +549,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 3.4434125
   m_Center: {x: 0, y: 32.90346, z: 0}
---- !u!114 &5525430981076810170
+--- !u!114 &8491694904750760611
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
