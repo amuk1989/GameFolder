@@ -7,14 +7,10 @@ using UnityEngine;
 
 namespace Character
 {
-    public class CarHealthComponent : MonoBehaviour, IVulnerable
+    public class CarHealthComponent : HealthBaseComponent, IVulnerable
     {
         [SerializeField] private int _maxHealthPoint;
         [SerializeField] private GameObject _explosion;
-
-        private readonly ReactiveCommand _onDead = new();
-
-        public IObservable<Unit> OnDead() => _onDead.AsObservable();
 
         public void TakeDamage(int damage)
         {

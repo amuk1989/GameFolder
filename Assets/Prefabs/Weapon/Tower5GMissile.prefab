@@ -181,13 +181,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de7602145ad9f945b8c64d695dee546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 10
   _rigidbody: {fileID: 2083070321632366749}
   _lifeTime: 0
   _explosion: {fileID: 4685656788591885517}
   _fire: {fileID: 2604381645960877986}
   target: {fileID: 0}
   missileSpeed: 5
-  damage: 10
 --- !u!1001 &3438980577380765484
 PrefabInstance:
   m_ObjectHideFlags: 0

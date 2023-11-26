@@ -6,7 +6,7 @@ using Main;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class Tower5GHealth : MonoBehaviour, IVulnerable
+public class Tower5GHealth : HealthBaseComponent, IVulnerable
 {
     [SerializeField] private float _explosionTime;
     [SerializeField] private GameObject _explosionCOntainer;
@@ -15,13 +15,15 @@ public class Tower5GHealth : MonoBehaviour, IVulnerable
     public int maxHealth = 100;
     private int currentHealth;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         currentHealth = maxHealth;
     }
 
     public void TakeDamage(int damage)
     {
+        if (IsImmortal) return;
         currentHealth -= damage;
 
         if (currentHealth <= 0)
@@ -33,6 +35,7 @@ public class Tower5GHealth : MonoBehaviour, IVulnerable
     private async void DestroyProcess()
     {
         gameObject.layer = LayerMask.NameToLayer("PhysicsIgnore");
+        _onDead.Execute();
         _explosionCOntainer.gameObject.SetActive(true);
         await Task.Delay(TimeSpan.FromSeconds(_explosionTime/2f));
         _view.SetActive(false);
