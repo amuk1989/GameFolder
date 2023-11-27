@@ -30,6 +30,7 @@ namespace Main
         public void StopInput()
         {
             _inputFlow?.Dispose();
+            _onMainInputStatus.Value = InputStatus.OnRelease;
         }
 
         private void OnDestroy()
