@@ -1,6 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Character;
+using DG.Tweening;
 using UniRx;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,11 +14,13 @@ namespace Main
         [SerializeField] private Tower5GHealth[] _tower5G;
         [SerializeField] private Tower5GHealth _mainPower5G;
         [SerializeField] private GameObject _shield;
+        [SerializeField] private SpriteRenderer _valve;
 
         private int _deadCount;
         
         private void Start()
         {
+            _valve.DOFade(0, 2);
             _carHealth
                 .OnDead()
                 .Subscribe(_ => SceneManager.LoadScene("StartMenu"))
@@ -44,6 +47,8 @@ namespace Main
                 .Subscribe(async _ =>
                 {
                     await Task.Delay(5000);
+                    _valve.DOFade(1, 2);
+                    await Task.Delay(2000);
                     SceneManager.LoadScene("StartMenu");
                 })
                 .AddTo(this);

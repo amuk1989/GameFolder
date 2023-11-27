@@ -15,6 +15,7 @@ namespace Aim
         [SerializeField] private Gun _gun;
         [SerializeField] private InputController _inputController;
         [SerializeField] private float _rateOfFire;
+        [SerializeField] private AudioSource _shootSound;
 
         private Transform _aimTransform;
         private CancellationTokenSource _fireToken;
@@ -61,8 +62,10 @@ namespace Aim
 
         private async Task FireTask(CancellationToken token)
         {
+            _shootSound.Play();
             do
             {
+
                 _gun.Fire();
                 await Task.Delay(TimeSpan.FromSeconds(_rateOfFire/60f), token);
             } while (!token.IsCancellationRequested);
@@ -72,6 +75,7 @@ namespace Aim
         private void StopFire()
         {
             if (_fireToken == null) return;
+            _shootSound.Stop();
             _fireToken.Cancel();
             _fireToken.Dispose();
             _fireToken = null;
