@@ -1,4 +1,5 @@
 ﻿using System;
+using Main;
 using UnityEngine;
 
 public class TowerCellMissile : MonoBehaviour
@@ -10,14 +11,14 @@ public class TowerCellMissile : MonoBehaviour
 
     [SerializeField] private Transform target;
     [SerializeField] public float missileSpeed = 5f;
-    [SerializeField] public int damage = 10;
+    [SerializeField] public int damage = 30;
 
     public void SetTarget()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    private void Update()
+        private void Update()
     {
         if (target == null)
         {
@@ -31,6 +32,9 @@ public class TowerCellMissile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("TowerColliderToIgnore"))
+            return;
+
         _rigidbody.AddForce(Vector3.zero);
         _rigidbody.isKinematic = true;
 

@@ -869,7 +869,7 @@ Transform:
   m_GameObject: {fileID: 4782582371416893749}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.523, z: 0}
+  m_LocalPosition: {x: 0, y: 3.01, z: 0}
   m_LocalScale: {x: 0.19038999, y: 0.95194, z: 0.19039}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2054,7 +2054,7 @@ GameObject:
   - component: {fileID: 5352447529905110027}
   m_Layer: 0
   m_Name: TowerCell
-  m_TagString: Untagged
+  m_TagString: TowerColliderToIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2070,7 +2070,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: 4.48, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8614457773309005762}
   - {fileID: 537882020161683529}
@@ -2124,8 +2124,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.1142178, y: 1.2113178, z: 1}
-  m_Center: {x: 0, y: -4.388288, z: 0}
+  m_Size: {x: 2.1142178, y: 1.211318, z: 2.0250988}
+  m_Center: {x: 0, y: -4.388288, z: 0.018561363}
 --- !u!65 &7588709945934581916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2145,8 +2145,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.7492156, y: 5.591347, z: 1}
-  m_Center: {x: 0.009605646, y: -1.0443265, z: 0}
+  m_Size: {x: 1.7492156, y: 5.874057, z: 1.5906086}
+  m_Center: {x: 0.009605646, y: -0.90297174, z: 0.01996708}
 --- !u!65 &6425659292629910231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2166,8 +2166,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.26390696, y: 2.251358, z: 0.08933258}
-  m_Center: {x: 0.008178949, y: 4.8921695, z: 0.004293442}
+  m_Size: {x: 0.26390696, y: 3.025877, z: 0.22088623}
+  m_Center: {x: 0.008178949, y: 4.5049105, z: 0.0004234314}
 --- !u!135 &5589997598737950257
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2187,7 +2187,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.68
+  m_Radius: 0.71
   m_Center: {x: 0, y: 2.53, z: 0}
 --- !u!114 &5352447529905110027
 MonoBehaviour:
