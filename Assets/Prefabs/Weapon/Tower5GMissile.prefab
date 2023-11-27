@@ -187,7 +187,7 @@ MonoBehaviour:
   _explosion: {fileID: 4685656788591885517}
   _fire: {fileID: 2604381645960877986}
   target: {fileID: 0}
-  missileSpeed: 5
+  missileSpeed: 20
 --- !u!1001 &3438980577380765484
 PrefabInstance:
   m_ObjectHideFlags: 0

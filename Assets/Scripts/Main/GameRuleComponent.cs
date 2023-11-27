@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Character;
 using DG.Tweening;
+using KartGame.KartSystems;
 using UniRx;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,12 +13,14 @@ namespace Main
     public class GameRuleComponent: MonoBehaviour
     {
         [SerializeField] private CarHealthComponent _carHealth;
+        [SerializeField] private ArcadeKart _arcadeKart;
         [SerializeField] private Tower5GHealth[] _tower5G;
         [SerializeField] private Tower5GHealth _mainPower5G;
         [SerializeField] private GameObject _shield;
         [SerializeField] private SpriteRenderer _valve;
         [SerializeField] private Image _gameOverPanel;
         [SerializeField] private Image _winPanel;
+        [SerializeField] private InputController _inputController;
 
         private int _deadCount;
         private bool _isDead = false;
@@ -32,6 +35,8 @@ namespace Main
                 {
                     if (_winPanel.IsActive() || _isWin) return;
                     _isDead = true;
+                    _inputController.StopInput();
+                    _arcadeKart.SetCanMove(false);
 
                     await Task.Delay(2000);
                     _gameOverPanel.gameObject.SetActive(true);
