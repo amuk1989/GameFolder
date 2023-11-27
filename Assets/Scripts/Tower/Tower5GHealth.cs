@@ -11,6 +11,8 @@ public class Tower5GHealth : HealthBaseComponent, IVulnerable
     [SerializeField] private GameObject _explosionCOntainer;
     [SerializeField] private GameObject _view;
 
+    [SerializeField] private HealthBar _healthBar;
+
     public int maxHealth = 100;
     private int currentHealth;
 
@@ -22,13 +24,15 @@ public class Tower5GHealth : HealthBaseComponent, IVulnerable
 
     public void TakeDamage(int damage)
     {
-        if (IsImmortal) return;
+        if (IsImmortal)
+            return;
+
         currentHealth -= damage;
 
+        _healthBar.UpdateHealthBar(maxHealth, currentHealth);
+
         if (currentHealth <= 0)
-        {
             DestroyProcess();
-        }
     }
 
     private async void DestroyProcess()

@@ -9,12 +9,24 @@ namespace Character
     {
         [SerializeField] private int _maxHealthPoint;
         [SerializeField] private GameObject _explosion;
+        [SerializeField] private HealthBar _healthBar;
+        private int _currentHealthPoint;
+
+
+        protected override void Start()
+        {
+            base.Start();
+            _currentHealthPoint = _maxHealthPoint;
+        }
 
         private bool _isDead = false;
 
         public void TakeDamage(int damage)
         {
-            _maxHealthPoint -= damage;
+            _currentHealthPoint -= damage;
+
+            _healthBar.UpdateHealthBar(_maxHealthPoint, _currentHealthPoint);
+
             if (_maxHealthPoint <= 0 && !_isDead) DeadTask();
         }
 
