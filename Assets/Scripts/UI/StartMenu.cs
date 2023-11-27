@@ -15,7 +15,7 @@ public class StartMenu : MonoBehaviour
         
         _startButton
             .OnClickAsObservable()
-            .Subscribe(_ => SceneManager.LoadScene("CarTest"))
+            .Subscribe(_ => SceneManager.LoadScene("StartCutScene"))
             .AddTo(this);
     }
 }

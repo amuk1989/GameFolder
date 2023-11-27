@@ -19,19 +19,20 @@ namespace Character
             _currentHealthPoint = _maxHealthPoint;
         }
 
+        private bool _isDead = false;
+
         public void TakeDamage(int damage)
         {
             _currentHealthPoint -= damage;
 
             _healthBar.UpdateHealthBar(_maxHealthPoint, _currentHealthPoint);
 
-            if (_maxHealthPoint <= 0)
-                DeadTask();
+            if (_currentHealthPoint <= 0 && !_isDead) DeadTask();
         }
 
         private async void DeadTask()
         {
-            gameObject.layer = LayerMask.NameToLayer("PhysicsIgnore");
+            _isDead = true;
             _explosion.SetActive(true);
             await Task.Delay(TimeSpan.FromSeconds(0.75));
             _onDead.Execute();

@@ -13,6 +13,7 @@ namespace Main
         public IObservable<Unit> OnDead() => _onDead.AsObservable();
 
         public void MakeMortal() => IsImmortal = false;
+        public void MakeImmortal() => IsImmortal = true;
 
         protected virtual void Start()
         {
