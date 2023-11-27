@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class StartMenu : MonoBehaviour
 {
     [SerializeField] private Button _startButton;
+    [SerializeField] private Button _exitButton;
     
     private void Start()
     {
@@ -16,6 +17,11 @@ public class StartMenu : MonoBehaviour
         _startButton
             .OnClickAsObservable()
             .Subscribe(_ => SceneManager.LoadScene("StartCutScene"))
+            .AddTo(this);
+
+        _exitButton
+            .OnClickAsObservable()
+            .Subscribe(_ => Application.Quit())
             .AddTo(this);
     }
 }

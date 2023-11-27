@@ -7,6 +7,7 @@ using UniRx;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 namespace Main
 {
@@ -39,8 +40,8 @@ namespace Main
                     _arcadeKart.SetCanMove(false);
 
                     await Task.Delay(2000);
-                    _gameOverPanel.gameObject.SetActive(true);
                     _gameOverPanel.DOFade(1, 2);
+                    SceneManager.LoadScene("GameOverScene");
                 })
                 .AddTo(this);
 
@@ -66,12 +67,19 @@ namespace Main
                 {
                     if (_gameOverPanel.IsActive() || _isDead) return;
                     _isWin = true;
+
+                    var bullets = GameObject.FindObjectsByType<Tower5GMissile>(FindObjectsSortMode.None);
+
+                    foreach (var bullet in bullets)
+                    {
+                        Destroy(bullet);
+                    }
                     
                     _carHealth.MakeImmortal();
-                    await Task.Delay(5000);
-                    
-                    _winPanel.gameObject.SetActive(true);
+                    await Task.Delay(3000);
                     _winPanel.DOFade(1, 2);
+                    await Task.Delay(2000);
+                    SceneManager.LoadScene("WinScene");
                 })
                 .AddTo(this);
         }
