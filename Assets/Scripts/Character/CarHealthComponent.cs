@@ -27,7 +27,7 @@ namespace Character
 
             _healthBar.UpdateHealthBar(_maxHealthPoint, _currentHealthPoint);
 
-            if (_maxHealthPoint <= 0 && !_isDead) DeadTask();
+            if (_currentHealthPoint <= 0 && !_isDead) DeadTask();
         }
 
         private async void DeadTask()

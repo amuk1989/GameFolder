@@ -17,8 +17,11 @@ namespace Main
         [SerializeField] private GameObject _shield;
         [SerializeField] private SpriteRenderer _valve;
         [SerializeField] private Image _gameOverPanel;
+        [SerializeField] private Image _winPanel;
 
         private int _deadCount;
+        private bool _isDead = false;
+        private bool _isWin = false;
         
         private void Start()
         {
@@ -27,10 +30,12 @@ namespace Main
                 .OnDead()
                 .Subscribe(async _ =>
                 {
+                    if (_winPanel.IsActive() || _isWin) return;
+                    _isDead = true;
+
                     await Task.Delay(2000);
                     _gameOverPanel.gameObject.SetActive(true);
                     _gameOverPanel.DOFade(1, 2);
-                    // SceneManager.LoadScene("StartMenu");
                 })
                 .AddTo(this);
 
@@ -54,10 +59,14 @@ namespace Main
                 .OnDead()
                 .Subscribe(async _ =>
                 {
+                    if (_gameOverPanel.IsActive() || _isDead) return;
+                    _isWin = true;
+                    
+                    _carHealth.MakeImmortal();
                     await Task.Delay(5000);
-                    _valve.DOFade(1, 2);
-                    await Task.Delay(2000);
-                    SceneManager.LoadScene("StartMenu");
+                    
+                    _winPanel.gameObject.SetActive(true);
+                    _winPanel.DOFade(1, 2);
                 })
                 .AddTo(this);
         }
