@@ -10,8 +10,7 @@ public class Tower5GHealth : HealthBaseComponent, IVulnerable
     [SerializeField] private float _explosionTime;
     [SerializeField] private GameObject _explosionCOntainer;
     [SerializeField] private GameObject _view;
-    [SerializeField] private AudioSource _explosionSound;
-    
+
     public int maxHealth = 100;
     private int currentHealth;
 
