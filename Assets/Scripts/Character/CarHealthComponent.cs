@@ -33,7 +33,6 @@ namespace Character
         private async void DeadTask()
         {
             _isDead = true;
-            gameObject.layer = LayerMask.NameToLayer("PhysicsIgnore");
             _explosion.SetActive(true);
             await Task.Delay(TimeSpan.FromSeconds(0.75));
             _onDead.Execute();

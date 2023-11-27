@@ -22,7 +22,7 @@ namespace Main
         [SerializeField] private Image _winPanel;
         [SerializeField] private InputController _inputController;
 
-        private int _deadCount;
+        private int _deadCount = 0;
         private bool _isDead = false;
         private bool _isWin = false;
         
