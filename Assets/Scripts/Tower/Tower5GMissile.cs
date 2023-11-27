@@ -12,7 +12,6 @@ public class Tower5GMissile : BaseBullet
 
     [SerializeField] private Transform target;
     [SerializeField] public float missileSpeed = 5f;
-    [SerializeField] public int damage = 50;
 
     public void SetTarget()
     {
