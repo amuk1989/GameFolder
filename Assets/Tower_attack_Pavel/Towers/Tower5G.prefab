@@ -516,7 +516,7 @@ MonoBehaviour:
   _explosionCOntainer: {fileID: 2808410706519829379}
   _view: {fileID: 2218493217461625329}
   _healthBar: {fileID: 8766071889408101134}
-  maxHealth: 100
+  maxHealth: 300
 --- !u!1 &2218493217461625329
 GameObject:
   m_ObjectHideFlags: 0
