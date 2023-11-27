@@ -2418,7 +2418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isImmortal: 0
-  _maxHealthPoint: 500
+  _maxHealthPoint: 1000
   _explosion: {fileID: 5466470284442625577}
   _healthBar: {fileID: 7155602669253455887}
 --- !u!4 &8787124900318448535 stripped
