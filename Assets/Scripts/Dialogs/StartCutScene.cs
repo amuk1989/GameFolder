@@ -33,7 +33,7 @@ public class StartCutScene : MonoBehaviour
         _ruslanaBehavior.Show();
         await Task.Delay(TimeSpan.FromSeconds(18));
         _valve.DOFade(1, 2f);
-        await Task.Delay(TimeSpan.FromSeconds(15));
+        await Task.Delay(TimeSpan.FromSeconds(12));
         SceneManager.LoadScene("Game");
     }
 }
