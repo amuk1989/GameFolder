@@ -18,29 +18,27 @@ public class Tower5GMissile : BaseBullet
         target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (target == null)
         {
-            Destroy(gameObject);
             return;
         }
-
-        // Move towards the target
-        transform.position = Vector3.MoveTowards(transform.position, target.position, missileSpeed * Time.deltaTime);
+        
+        _rigidbody.velocity = (target.position - transform.position).normalized * missileSpeed;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("TowerColliderToIgnore"))
             return;
-
-        gameObject.layer = LayerMask.NameToLayer("PhysicsIgnore");
+        //
+        // gameObject.layer = LayerMask.NameToLayer("PhysicsIgnore");
         
         SetDamage(collision);
         
-        _rigidbody.AddForce(Vector3.zero);
-        _rigidbody.isKinematic = true;
+        // _rigidbody.AddForce(Vector3.zero);
+        // _rigidbody.isKinematic = true;
 
         Destroy(gameObject, 0.5f);
         missileSpeed = 0;
