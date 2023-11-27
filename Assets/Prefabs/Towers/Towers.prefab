@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2247461781341628603}
   m_Layer: 0
   m_Name: Towers
-  m_TagString: Untagged
+  m_TagString: TowerColliderToIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +45,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2247461781341628603}
     m_Modifications:
+    - target: {fileID: 1344487175350362348, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
     - target: {fileID: 1386122323371613424, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -105,20 +109,166 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower5G
       objectReference: {fileID: 0}
+    - target: {fileID: 2218493217461625329, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2808410706519829379, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365100447571186636, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365100447806420868, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365100447806420874, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365100448477534909, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365100448753786966, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365100448869093651, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3573750172923495713, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300267584723792259, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300267584876773574, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300267585146845741, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300267585817892628, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300267585817892634, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300267586025829212, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665989683944231264, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340663883140221274, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513767175360280190, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657913957547817263, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125027515318397386, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
     - target: {fileID: 8491694904750760611, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
       propertyPath: _isImmortal
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9143370988256600340, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4300267585817892634, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 993769722418904820}
+    - targetCorrespondingSourceObject: {fileID: 3365100447806420874, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7392279658434102627}
   m_SourcePrefab: {fileID: 100100000, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
 --- !u!4 &2282139481509447097 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1386122323371613424, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
   m_PrefabInstance: {fileID: 907395253178079561}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2460243217523437251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3365100447806420874, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+  m_PrefabInstance: {fileID: 907395253178079561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7392279658434102627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2460243217523437251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!1 &3979539096275209811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4300267585817892634, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+  m_PrefabInstance: {fileID: 907395253178079561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &993769722418904820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3979539096275209811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1493956446352217245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -221,9 +371,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4189500238302900790}
     m_Modifications:
+    - target: {fileID: 103226, guid: 2736bbc2f2c78a949957b0719c2992bd, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 156244, guid: 2736bbc2f2c78a949957b0719c2992bd, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
     - target: {fileID: 178460, guid: 2736bbc2f2c78a949957b0719c2992bd, type: 3}
       propertyPath: m_Name
       value: SimpleLightningBoltAnimatedPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 178460, guid: 2736bbc2f2c78a949957b0719c2992bd, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
       objectReference: {fileID: 0}
     - target: {fileID: 430986, guid: 2736bbc2f2c78a949957b0719c2992bd, type: 3}
       propertyPath: m_LocalScale.x
@@ -489,6 +651,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2247461781341628603}
     m_Modifications:
+    - target: {fileID: 1344487175350362348, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
     - target: {fileID: 1386122323371613424, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -548,6 +714,34 @@ PrefabInstance:
     - target: {fileID: 1763069386781722186, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
       propertyPath: m_Name
       value: Tower5G (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218493217461625329, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2808410706519829379, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 3573750172923495713, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665989683944231264, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513767175360280190, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657913957547817263, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143370988256600340, guid: ad5b111a44eb6374cb5ca1719aa1a7f4, type: 3}
+      propertyPath: m_TagString
+      value: TowerColliderToIgnore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
