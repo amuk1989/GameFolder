@@ -260,7 +260,6 @@ GameObject:
   - component: {fileID: 4593895689767284}
   - component: {fileID: 205499493211553994}
   - component: {fileID: 65857008796313258}
-  - component: {fileID: 65203774447570096}
   m_Layer: 0
   m_Name: rus_build_5et_02a
   m_TagString: Untagged
@@ -336,27 +335,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 114, y: 45, z: 32}
   m_Center: {x: 0, y: 22.5, z: 0}
---- !u!65 &65203774447570096
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820578872569314}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 8, y: 40, z: 38}
-  m_Center: {x: -12, y: 24, z: 0}
 --- !u!1 &1895863384870834
 GameObject:
   m_ObjectHideFlags: 0
